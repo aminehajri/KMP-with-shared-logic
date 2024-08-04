@@ -33,11 +33,15 @@ class NewsViewModel : BaseViewModel() {
         )
     )
 
+    init {
+        getNews()
+    }
+
     //TODO("fetch news from API")
     private fun getNews() {
         scope.launch {
             fetchNews()
-            delay(500)
+            delay(1000)
             _newsState.emit(NewsState(news = fetchNews()))
         }
     }
