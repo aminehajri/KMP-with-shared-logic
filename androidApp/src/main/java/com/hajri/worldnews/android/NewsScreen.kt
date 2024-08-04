@@ -67,7 +67,7 @@ fun NewsItemView(newsItem: NewsItem) {
             style = TextStyle(fontWeight = FontWeight.Bold, fontSize = 22.sp)
         )
         Spacer(modifier = Modifier.height(8.dp))
-        Text(text = newsItem.description)
+        Text(text = newsItem.content)
         Spacer(modifier = Modifier.height(4.dp))
         Text(
             text = newsItem.date,

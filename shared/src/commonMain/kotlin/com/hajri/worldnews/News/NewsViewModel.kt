@@ -15,19 +15,19 @@ class NewsViewModel : BaseViewModel() {
     private val newsList = listOf(
         NewsItem(
             title = "Share a piece of logic",
-            description = "Improve your app’s stability by sharing an isolated and critical part of the app. Reuse the Kotlin code you already have to keep the applications in sync.",
+            content = "Improve your app’s stability by sharing an isolated and critical part of the app. Reuse the Kotlin code you already have to keep the applications in sync.",
             date = "01.01.2024",
             imageUrl = "https://images.unsplash.com/photo-1632006155272-b30a9f6f2aac?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         ),
         NewsItem(
             title = "Share a piece of logic",
-            description = "Improve your app’s stability by sharing an isolated and critical part of the app. Reuse the Kotlin code you already have to keep the applications in sync.",
+            content = "Improve your app’s stability by sharing an isolated and critical part of the app. Reuse the Kotlin code you already have to keep the applications in sync.",
             date = "01.01.2024",
             imageUrl = "https://images.unsplash.com/photo-1633936478473-e75c1252cccf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         ),
         NewsItem(
             title = "Share a piece of logic",
-            description = "Improve your app’s stability by sharing an isolated and critical part of the app. Reuse the Kotlin code you already have to keep the applications in sync.",
+            content = "Improve your app’s stability by sharing an isolated and critical part of the app. Reuse the Kotlin code you already have to keep the applications in sync.",
             date = "01.01.2024",
             imageUrl = "https://images.unsplash.com/photo-1556011573-875fbbf761fd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         )
