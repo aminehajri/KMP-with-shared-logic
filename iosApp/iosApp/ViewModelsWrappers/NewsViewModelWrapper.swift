@@ -17,7 +17,7 @@ class NewsViewModelWrapper: ObservableObject{
     @Published var newsState: NewsState
     
     init() {
-        newsViewModel = NewsViewModel()
+        newsViewModel = NewsInjector().newsViewModel
         newsState = newsViewModel.newsState.value
     }
     
