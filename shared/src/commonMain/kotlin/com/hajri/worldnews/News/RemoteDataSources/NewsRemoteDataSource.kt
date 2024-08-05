@@ -9,7 +9,7 @@ import io.ktor.client.request.get
 class NewsRemoteDataSource(private val httpClient: HttpClient) {
 
     private val country = "us"
-    private val category = "sport"
+    private val category = "business"
 
     // You can create your own key from : https://newsapi.org
     private val apiKey = ApiKeys.NEWS_API_KEY

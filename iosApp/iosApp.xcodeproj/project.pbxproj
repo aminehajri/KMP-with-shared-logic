@@ -13,6 +13,8 @@
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 		E77406402C5FBC1C00169293 /* NewsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E774063F2C5FBC1C00169293 /* NewsScreen.swift */; };
 		E77406432C5FBFD400169293 /* NewsViewModelWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77406422C5FBFD400169293 /* NewsViewModelWrapper.swift */; };
+		E78ADF522C61171100ED2CFE /* NewsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78ADF512C61171100ED2CFE /* NewsRowView.swift */; };
+		E78ADF542C61175F00ED2CFE /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78ADF532C61175F00ED2CFE /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,8 @@
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E774063F2C5FBC1C00169293 /* NewsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsScreen.swift; sourceTree = "<group>"; };
 		E77406422C5FBFD400169293 /* NewsViewModelWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModelWrapper.swift; sourceTree = "<group>"; };
+		E78ADF512C61171100ED2CFE /* NewsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRowView.swift; sourceTree = "<group>"; };
+		E78ADF532C61175F00ED2CFE /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				E774063F2C5FBC1C00169293 /* NewsScreen.swift */,
+				E78ADF512C61171100ED2CFE /* NewsRowView.swift */,
+				E78ADF532C61175F00ED2CFE /* ErrorView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -204,6 +210,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E78ADF522C61171100ED2CFE /* NewsRowView.swift in Sources */,
+				E78ADF542C61175F00ED2CFE /* ErrorView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 				E77406402C5FBC1C00169293 /* NewsScreen.swift in Sources */,

@@ -14,69 +14,37 @@ struct NewsScreen: View {
     @ObservedObject private(set) var newsViewModel: NewsViewModelWrapper
     
     var body: some View {
-        VStack {
-            
-            if newsViewModel.newsState.loading {
-                ProgressView()
-            }
-            
-            if let error = newsViewModel.newsState.error {
-                ErrorView(message: error)
-            }
-            
-            if(!newsViewModel.newsState.news.isEmpty) {
-                ScrollView {
-                    LazyVStack(spacing: 10) {
-                        ForEach(newsViewModel.newsState.news, id: \.self) { newsItem in
-                            ArticleItemView(newsItem: newsItem)
-                        }
-                    }
-                }
-            }
-            
-        }.onAppear{
+        
+        NavigationSplitView {
+            content
+        } detail: {
+            Text("Display News details")
+        }
+        .onAppear {
             newsViewModel.observe()
         }
     }
-}
-
-struct ArticleItemView: View {
-    var newsItem: NewsItem
     
-    var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            AsyncImage(url: URL(string: newsItem.imageUrl)) { content in
-                Group {
-                    if let image = content.image {
-                        image
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                    } else if content.error != nil {
-                        Text("Image Load Error")
-                    } else {
-                        ProgressView()
-                    }
-                }
-            }
-            Text(newsItem.title)
-                .font(.title)
-                .fontWeight(.bold)
-            Text(newsItem.desc)
-            Text(newsItem.date)
-                .frame(maxWidth: .infinity, alignment: .trailing)
-                .foregroundColor(.gray)
+    @ViewBuilder
+    private var content: some View {
+        if newsViewModel.newsState.loading {
+            ProgressView()
+        } else if let error = newsViewModel.newsState.error {
+            ErrorView(message: error)
+        } else if newsViewModel.newsState.news.isEmpty {
+            EmptyView()
+        } else {
+            newsList
         }
-        .padding(16)
     }
-}
-
-struct ErrorView: View {
-    var message: String
     
-    var body: some View {
-        Text(message)
-            .font(.title)
+    private var newsList: some View {
+        List(newsViewModel.newsState.news, id: \.id) { item in
+            NewsRowView(newsItem: item)
+        }
+        .navigationTitle("News")
     }
+    
 }
 
 #Preview {

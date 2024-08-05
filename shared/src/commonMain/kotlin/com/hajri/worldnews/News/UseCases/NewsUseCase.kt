@@ -19,12 +19,14 @@ class NewsUseCase(private val newsRemoteDataSource: NewsRemoteDataSource) {
     }
 
     private fun mapNews(newsResponse: List<NewsItemResponse>): List<NewsItem> {
-        return newsResponse.map { item ->
+        return newsResponse.filter { item ->
+            !item.imageUrl.isNullOrEmpty()
+        }.map { item ->
             NewsItem(
                 title = item.title,
                 desc = item.desc ?: "The publisher hasn't added any description for this article.",
                 date = getDaysAgoString(item.publishedAt),
-                imageUrl = item.imageUrl ?: "",
+                imageUrl = item.imageUrl!!,
                 content = item.content
                     ?: "The publisher hasn't added any content for this article.",
                 publisher = item.source.name
