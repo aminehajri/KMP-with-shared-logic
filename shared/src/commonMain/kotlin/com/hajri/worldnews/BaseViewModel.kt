@@ -1,4 +1,4 @@
-package com.hajri.worldnews.News.ViewModels
+package com.hajri.worldnews
 
 import kotlinx.coroutines.CoroutineScope
 

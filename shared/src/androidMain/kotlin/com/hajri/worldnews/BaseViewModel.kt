@@ -1,4 +1,4 @@
-package com.hajri.worldnews.News.ViewModels
+package com.hajri.worldnews
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

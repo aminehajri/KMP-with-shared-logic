@@ -1,4 +1,4 @@
-package com.hajri.worldnews.android
+package com.hajri.worldnews.android.UI
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.shape.RoundedCornerShape

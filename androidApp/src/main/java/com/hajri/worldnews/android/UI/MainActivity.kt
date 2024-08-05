@@ -1,4 +1,4 @@
-package com.hajri.worldnews.android
+package com.hajri.worldnews.android.UI
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -15,15 +15,13 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val newsViewModel: NewsViewModel by viewModels()
-
         setContent {
             MyApplicationTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    NewsScreen(newsViewModel = newsViewModel)
+                    NewsScreen()
                 }
             }
         }

@@ -1,4 +1,4 @@
-package com.hajri.worldnews.android
+package com.hajri.worldnews.android.UI
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -25,10 +25,11 @@ import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.hajri.worldnews.News.Models.NewsItem
 import com.hajri.worldnews.News.ViewModels.NewsViewModel
+import org.koin.androidx.compose.getViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun NewsScreen(newsViewModel: NewsViewModel) {
+fun NewsScreen(newsViewModel: NewsViewModel = getViewModel()) {
     val newsState = newsViewModel.newsState.collectAsState()
 
     Column {
