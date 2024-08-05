@@ -1,4 +1,4 @@
-package com.hajri.worldnews.News
+package com.hajri.worldnews.News.Models
 
 data class NewsState(
     val news: List<NewsItem> = listOf(),

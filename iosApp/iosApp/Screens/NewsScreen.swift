@@ -61,7 +61,7 @@ struct ArticleItemView: View {
             Text(newsItem.title)
                 .font(.title)
                 .fontWeight(.bold)
-            Text(newsItem.content)
+            Text(newsItem.desc)
             Text(newsItem.date)
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .foregroundColor(.gray)

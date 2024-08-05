@@ -23,8 +23,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
-import com.hajri.worldnews.News.NewsItem
-import com.hajri.worldnews.News.NewsViewModel
+import com.hajri.worldnews.News.Models.NewsItem
+import com.hajri.worldnews.News.ViewModels.NewsViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -67,7 +67,7 @@ fun NewsItemView(newsItem: NewsItem) {
             style = TextStyle(fontWeight = FontWeight.Bold, fontSize = 22.sp)
         )
         Spacer(modifier = Modifier.height(8.dp))
-        Text(text = newsItem.content)
+        Text(text = newsItem.desc)
         Spacer(modifier = Modifier.height(4.dp))
         Text(
             text = newsItem.date,
