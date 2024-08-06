@@ -15,6 +15,7 @@
 		E77406432C5FBFD400169293 /* NewsViewModelWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77406422C5FBFD400169293 /* NewsViewModelWrapper.swift */; };
 		E78ADF522C61171100ED2CFE /* NewsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78ADF512C61171100ED2CFE /* NewsRowView.swift */; };
 		E78ADF542C61175F00ED2CFE /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78ADF532C61175F00ED2CFE /* ErrorView.swift */; };
+		E78ADF562C6267B400ED2CFE /* NewsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78ADF552C6267B400ED2CFE /* NewsDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		E77406422C5FBFD400169293 /* NewsViewModelWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModelWrapper.swift; sourceTree = "<group>"; };
 		E78ADF512C61171100ED2CFE /* NewsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRowView.swift; sourceTree = "<group>"; };
 		E78ADF532C61175F00ED2CFE /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		E78ADF552C6267B400ED2CFE /* NewsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				E774063F2C5FBC1C00169293 /* NewsScreen.swift */,
 				E78ADF512C61171100ED2CFE /* NewsRowView.swift */,
 				E78ADF532C61175F00ED2CFE /* ErrorView.swift */,
+				E78ADF552C6267B400ED2CFE /* NewsDetailsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 				E77406402C5FBC1C00169293 /* NewsScreen.swift in Sources */,
+				E78ADF562C6267B400ED2CFE /* NewsDetailsView.swift in Sources */,
 				E77406432C5FBFD400169293 /* NewsViewModelWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

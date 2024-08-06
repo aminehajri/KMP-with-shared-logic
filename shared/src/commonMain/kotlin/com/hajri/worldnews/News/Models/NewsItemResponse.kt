@@ -11,6 +11,5 @@ data class NewsItemResponse(
     val desc: String?,
     val publishedAt: String,
     @SerialName("urlToImage")
-    val imageUrl: String?,
-    val content: String?
+    val imageUrl: String?
 )

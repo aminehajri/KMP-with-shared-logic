@@ -19,13 +19,11 @@ struct NewsRowView: View {
                     if let image = content.image {
                         image
                             .resizable()
-                            .aspectRatio(contentMode: .fit)
+                            .scaledToFit()
                     }
                 }
             }
             Text(newsItem.title)
-                .fontWeight(.bold)
-            Text(newsItem.desc)
             Text(newsItem.date)
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .foregroundStyle(.gray)
@@ -37,5 +35,5 @@ struct NewsRowView: View {
 extension NewsItem: Identifiable {}
 
 #Preview {
-    NewsRowView(newsItem: .init(title: "title", desc: "desc", date: "Today", imageUrl: "", content: "content", publisher: "publisher name"))
+    NewsRowView(newsItem: .init(title: "title", desc: "desc", date: "Today", imageUrl: "", publisher: "publisher name"))
 }

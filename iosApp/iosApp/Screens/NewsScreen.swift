@@ -18,7 +18,7 @@ struct NewsScreen: View {
         NavigationSplitView {
             content
         } detail: {
-            Text("Display News details")
+            Text("Selected news item")
         }
         .onAppear {
             newsViewModel.observe()
@@ -32,19 +32,22 @@ struct NewsScreen: View {
         } else if let error = newsViewModel.newsState.error {
             ErrorView(message: error)
         } else if newsViewModel.newsState.news.isEmpty {
-            EmptyView()
+            Text("No actual news")
         } else {
             newsList
         }
     }
     
     private var newsList: some View {
-        List(newsViewModel.newsState.news, id: \.id) { item in
-            NewsRowView(newsItem: item)
+        List(newsViewModel.newsState.news) { item in
+            NavigationLink {
+                NewsDetailsView(newsItem: item)
+            } label: {
+                NewsRowView(newsItem: item)
+            }
         }
         .navigationTitle("News")
     }
-    
 }
 
 #Preview {
