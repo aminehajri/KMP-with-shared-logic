@@ -1,6 +1,6 @@
 # Kotlin Multiplatform News App
 
-This project is an experiment with Kotlin Multiplatform technology for developing both iOS and Android applications. The goal is to share business logic between the two platforms while implementing their respective user interfaces using Jetpack Compose for Android and SwiftUI for iOS.
+This project is an experiment with Kotlin Multiplatform for developing both iOS and Android applications. The goal is to share business logic between the two platforms while implementing their respective user interfaces using Jetpack Compose for Android and SwiftUI for iOS.
 
 ## Project Overview
 
